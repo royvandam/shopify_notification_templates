@@ -1,0 +1,1 @@
+Het bedrag van {{ refund.amount | money }} is gerestitueerd voor je bestelling {{ order.name }} bij {{ shop.name }}.

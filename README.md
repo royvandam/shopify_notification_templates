@@ -1,2 +1,3 @@
-# shopify_notification_templates
-Translations of the Shopify notification templates
+# Shopify Notification Templates
+
+Nederlandse vertalingen van de Shopify notification templates.

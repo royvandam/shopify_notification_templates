@@ -1,0 +1,1 @@
+Je bestelling van {{ shop.name }} is geannuleerd en het bedrag van {{ order.total_price | money }} is gerestitueerd.

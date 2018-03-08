@@ -1,0 +1,1 @@
+Je bestelling bij {{ shop.name }} is verzonden. {% if order.order_status_url %}Bekijk de bestelling via ({{ order.name }}): {{ order.order_status_url }}{% endif %}
