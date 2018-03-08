@@ -1,0 +1,1 @@
+Er is een pakket onderweg voor je bestelling bij {{ shop.name }}.

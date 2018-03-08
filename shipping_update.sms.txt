@@ -1,0 +1,1 @@
+Het track & trace nummer van je bestelling bij {{ shop.name }} is gewijzigd.

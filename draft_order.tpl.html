@@ -1,5 +1,5 @@
 {% capture email_title %}Reserveringsbevestiging{% endcapture %}
-{% capture email_body %}{% if item_count > 1 %}De volgende producten zijn{% else %}Het volgende product is{% endif %} voor je gereserveerd tot en met: <strong>{{ reserve_inventory_until | date: "%d %m %Y, at %T %Z" }}</strong>{% endcapture %}
+{% capture email_body %}{% if item_count > 1 %}De volgende producten zijn{% else %}Het volgende product is{% endif %} voor je gereserveerd tot en met: <strong>{{ reserve_inventory_until | date: "%d/%m/%Y, %T %Z" }}</strong>{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">

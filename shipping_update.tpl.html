@@ -1,22 +1,4 @@
-{% if fulfillment.item_count == item_count %}
-    {% capture shipment_name %}Je bestelling is {% endcapture %}
-{% elsif fulfillment.item_count > 1 %}
-    {% if fulfillment_status == 'fulfilled' %}
-        {% capture shipment_name %}De laatste producten van je bestelling zijn{% endcapture %}
-    {% else %}
-        {% capture shipment_name %}De volgende producten van je bestelling zijn{% endcapture %}
-    {% endif %}
-{% else %}
-    {% if fulfillment_status == 'fulfilled' %}
-        {% capture shipment_name %}Het laatste product van je bestelling is{% endcapture %}
-    {% else %}
-        {% capture shipment_name %}Het volgende product van je bestelling is{% endcapture %}
-    {% endif %}
-{% endif %}
-
-{% capture email_title %}{{ shipment_name }} verzonden{% endcapture %}
-{% capture email_body %}{{ shipment_name }} verzonden.{% endcapture %}
-{% capture email_emphasis %}Verwachte leverdatum: <strong>{{fulfillment.estimated_delivery_at | date: "%d %m %Y"}}</strong>{% endcapture %}
+{% capture email_title %}Het track &amp; trace nummer van je bestelling is gewijzigd {% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">

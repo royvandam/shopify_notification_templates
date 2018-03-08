@@ -1,5 +1,5 @@
 {% if fulfillment.item_count == item_count %}
-    {% capture shipment_name %}Je bestelling is {% endcapture %}
+    {% capture shipment_name %}Je bestelling is{% endcapture %}
 {% elsif fulfillment.item_count > 1 %}
     {% if fulfillment_status == 'fulfilled' %}
         {% capture shipment_name %}De laatste producten van je bestelling zijn{% endcapture %}
@@ -14,9 +14,8 @@
     {% endif %}
 {% endif %}
 
-{% capture email_title %}{{ shipment_name }} verzonden{% endcapture %}
-{% capture email_body %}{{ shipment_name }} verzonden.{% endcapture %}
-{% capture email_emphasis %}Verwachte leverdatum: <strong>{{fulfillment.estimated_delivery_at | date: "%d %m %Y"}}</strong>{% endcapture %}
+{% capture email_title %}{{ shipment_name }} onderweg voor levering.{% endcapture %}
+{% capture email_emphasis %}Verwachte leverdatum: <strong>{{fulfillment.estimated_delivery_at | date: "%d/%m/%Y"}}</strong>{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">
